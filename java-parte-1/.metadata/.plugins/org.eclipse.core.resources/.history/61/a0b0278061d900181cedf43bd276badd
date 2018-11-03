@@ -1,0 +1,7 @@
+
+public class TestePontoFlutuante {
+	double salario;
+	salario = 7650.50;
+	
+	System.out.println("Mostrar o valor da variável salario " + salario);
+}

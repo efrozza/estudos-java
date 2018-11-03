@@ -1,0 +1,6 @@
+// Gerente é um funcionario (extends) herda da classe Funcionario
+public class Designer extends Funcionario {
+
+
+
+}

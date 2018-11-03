@@ -1,0 +1,20 @@
+
+public class TestePontoFlutuante {
+
+	public static void main(String[] args) {
+		double salario;
+		salario = 7650.50;
+		System.out.println("Mostrar o valor da variável salario " + salario);
+
+		// conta entre os dois inteiros vai retornar só o inteiro
+		int outraDivisao = 5 / 2;
+		System.out.println(outraDivisao);
+		
+		// o java avalia o que está depios do igual primeiro para depios atribuir, mesmo sendo double o resultado sera
+		// 2.0
+		double novaDivisao = 5 / 2;
+		System.out.println(novaDivisao);
+
+	}
+
+}

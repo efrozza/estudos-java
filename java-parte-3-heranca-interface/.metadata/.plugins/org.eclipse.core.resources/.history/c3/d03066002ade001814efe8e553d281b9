@@ -1,0 +1,9 @@
+
+public class Cliente implements Autenticavel {
+	
+	private AutenticacaoUtil autenticacaoUtil;
+
+	public Cliente() {
+		this.autenticacaoUtil = new AutenticacaoUtil();
+	}
+}

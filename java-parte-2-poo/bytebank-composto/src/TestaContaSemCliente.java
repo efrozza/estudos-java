@@ -1,0 +1,20 @@
+
+public class TestaContaSemCliente {
+	public static void main(String[] args) {
+		Conta contaDaLeticia = new Conta();
+		System.out.println(contaDaLeticia.getSaldo());
+		
+		contaDaLeticia.titular = new Cliente();
+		//se imprimir terá valor nulo no nome
+		System.out.println(contaDaLeticia.titular.nome);
+		
+		contaDaLeticia.titular.nome = "Leticia";
+		System.out.println(contaDaLeticia.titular.nome);
+		
+		/* o codigo abaixo gera null pointer pois está tentando acessar o cliente que nao foi instanciado
+		contaDaLeticia.titular.nome = "Leticia";
+		System.out.println(contaDaLeticia.titular.nome);
+		*/
+		
+	}
+}

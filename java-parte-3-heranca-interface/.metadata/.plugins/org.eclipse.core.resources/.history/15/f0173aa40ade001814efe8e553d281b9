@@ -1,0 +1,16 @@
+
+public class ContaCorrente extends Conta {
+	// construtores não são herdados
+	// chama o construtor Conta(int agencia, int numero)
+	public ContaCorrente(int agencia, int numero) {
+		super(agencia, numero);
+	}
+	
+	// subscrita de metodo
+	
+	@Override
+	public boolean saca(double valor) {
+		// TODO Auto-generated method stub
+		return super.saca(valor);
+	}
+}

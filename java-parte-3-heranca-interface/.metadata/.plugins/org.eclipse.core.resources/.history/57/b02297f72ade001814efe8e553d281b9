@@ -1,0 +1,31 @@
+// Gerente é um funcionario (extends) herda da classe Funcionario
+public class Gerente extends Funcionario implements Autenticavel {
+
+	private int senha;
+
+	@Override
+	public void setSenha(int senha) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean autentica(int senha) {
+		// TODO Auto-generated method stub
+		if (this.senha == senha) {
+			return true;
+		}
+
+		return false;
+
+	}
+
+	// sobrescrita de metodo.
+	public double getBonificacao() {
+		// usamos this quando o atributo esta na propria classe return this.salario;
+		// usando super sabemos que o atributo vem da classe mae
+		System.out.println("Bonificacao de gerente");
+		return super.getSalario();
+	}
+
+}

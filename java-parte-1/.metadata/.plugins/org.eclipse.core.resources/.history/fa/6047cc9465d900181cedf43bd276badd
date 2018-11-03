@@ -1,0 +1,9 @@
+public class TestaConversao {
+
+	public static void main (String[] args) {
+		double salario = 1250.50;
+		int valor = (int) salario;
+		//vai mostrar apenas a parte inteira por conta do casting (int)
+		System.out.println(valor);
+	}
+}

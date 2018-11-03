@@ -1,0 +1,14 @@
+
+public class TestePontoFlutuante {
+	
+	public static void main(String[] args) {
+		double salario;
+		salario = 7650.50;
+		System.out.println("Mostrar o valor da variável salario " + salario);
+		
+		int outraDivisao = 5/2;
+		
+		System.out.println(outraDivisao);
+	}
+	
+}

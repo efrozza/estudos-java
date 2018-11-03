@@ -1,0 +1,25 @@
+// Gerente é um funcionario (extends) herda da classe Funcionario
+public class Gerente extends Funcionario {
+
+	
+
+	//novo método, recebendo dois params
+    public boolean autentica(String login, int senha) {
+        //implementacao omitida
+    	return false;
+    }	
+	
+	
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+
+	// sobrescrita  de metodo. 
+	public double getBonificacao() {
+		// usamos this quando o atributo esta na propria classe return this.salario;
+		// usando super sabemos que o atributo vem da classe mae
+		System.out.println("Bonificacao de gerente");
+		return super.getSalario();
+	}
+
+}

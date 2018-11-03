@@ -1,0 +1,6 @@
+
+public class ContaCorrente extends Conta {
+	public ContaCorrente() {
+		// aqui o construtor padrao da classe mãe é chamado super();
+	}
+}

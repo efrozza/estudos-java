@@ -1,0 +1,13 @@
+
+public class TestaVariaveis {
+	public static void main(String[] args) {
+		System.out.println("Olá novo teste");
+		// java é estatica e fortemente tipada. Toda variável tem tipo
+		int idade; 
+		idade = 33;
+		
+		System.out.println("Mostrar o valor da variável idade" + idade);
+		
+	}
+	
+}

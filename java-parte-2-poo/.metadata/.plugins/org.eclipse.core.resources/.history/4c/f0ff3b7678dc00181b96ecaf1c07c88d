@@ -1,0 +1,13 @@
+
+public class CriaConta {
+
+	public static void main(String[] args) {
+		
+		Conta contaEverton = new Conta();
+		contaEverton.agencia = 123;
+		contaEverton.numero = 456;
+		contaEverton.titular = "Everton";
+		contaEverton.saldo = 200.0;
+				
+	}
+}

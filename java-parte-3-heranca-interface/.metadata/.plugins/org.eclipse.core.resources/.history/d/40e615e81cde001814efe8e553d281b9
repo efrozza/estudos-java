@@ -1,0 +1,57 @@
+
+public abstract class Funcionario {
+
+	/*
+	 * Uma classe abstrata representa um conceito, algo abstrato, e o compilador não
+	 * permite instanciar um objeto dessa classe. Para instanciar é preciso criar
+	 * primeiro uma classe filha não abstrata.
+	 */
+
+	private String nome;
+	private String cpf;
+	// publico para os filhos
+	private double salario;
+	
+	private int senha = 123;
+
+	public void autentica(Gerente gerente) {
+		boolean autenticou = gerente.autentica(senha);
+		if  (autenticou) {
+			System.out.println("Pode entrar no sistema!");
+		} else {
+			System.out.println("Não pode entrar no sistema!");
+		}
+	}
+	
+	public void setSenha(int senha) {
+		this.senha = senha;
+	}
+
+	// metodos abstratos obrigam os filhos a declarar esse metodo
+	public abstract double getBonificacao();
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+
+}

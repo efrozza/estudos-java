@@ -1,0 +1,9 @@
+
+public class SistemaInterno {
+	
+	private int senha = 123;
+	
+	public void autentica (Gerente gerente) {
+		gerente.autentica(senha);
+
+}
