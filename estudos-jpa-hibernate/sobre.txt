@@ -1,0 +1,9 @@
+- Download hibernate
+
+http://hibernate.org/orm/releases/5.3/
+
+2 - extrai a pasta e copia os arquivos da pasta
+
+hibernate-release-5.3.7.Final\lib\required
+
+para uma pasta lib dentro do projeto
